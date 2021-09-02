@@ -11,14 +11,15 @@
 * "dev": "webpack-dev-server --mode development --config ./webpack.config.js"
 
 ---
-## src/index
 
 ### 教學 webpack.config
 * mode 兩種模式 development production
 * entry 要編譯的檔案
 * output 要輸出的檔案
 * devServer 設定瀏覽器輸出的路徑和port
-* module
+* module 輸出的模組檔案
+* plugins 使用的套件配置
+* devtool 瀏覽器顯示的設定
 
 ### module介紹 loader
 * rules是使用規則 
@@ -26,8 +27,18 @@
 * use:使用的套件
 
 ### css載入
-* 需要安裝 npm install --save-dev css-loader style-loader  這樣webpack才能看得懂
+* 需要安裝 npm install --save-dev css-loader style-loader mini-css-extract-plugin 這樣webpack才能看得懂
 * 使用module 轉譯 webpack看得懂的語言
+* mini-css-extract-plugin 使css獨立出來
 
-### 產生html檔
+### 產生html,css,檔
+<font color="#f00">新增任何檔案 都使用這種形式</font>
+
 * 安裝 npm install --save-dev html-webpack-plugin
+* 針對裡面參數可設置許多功能 參考 https://github.com/jantimon/html-webpack-plugin#plugins
+
+### babel引入
+* npm install --save-dev babel-loader @babel/core @babel/preset-env --save-dev
+* 獨立出一個babel.config.js 放入option
+
+###
