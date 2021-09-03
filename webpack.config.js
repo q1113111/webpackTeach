@@ -19,32 +19,36 @@ module.exports = {
     compress: true,
     port: 9000,
   },
-  devtool:'source-map',
+  devtool: "source-map",
   // 使用的套件配置
   plugins: [
     new HtmlWebpackPlugin({
       template: "./index.html",
-      filename: "main.html",
     }),
-    new MiniCssExtractPlugin({
-      filename:'main.[hash].css'
-    }),
+    // new MiniCssExtractPlugin({
+    //   filename: "main.[hash].css",
+    // }),
   ],
   // 輸出的模組檔案
   module: {
     rules: [
       {
         test: /\.css$/i,
-        // use: ['style-loader', "css-loader"], 會放在<style>標籤裡 幾乎不會用這個
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        // 會放在<style>標籤裡 幾乎不會用這個
+        use: ['style-loader', "css-loader"], 
+        // use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-        }
-      }
+        },
+      },
+      {
+        test: /\.png/,
+        type: "asset/resource",
+      },
     ],
   },
 };

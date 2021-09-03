@@ -1,5 +1,8 @@
 .box{
-    width: 100px;
-    height: 100px;
-    background-color: #f0f;
+    width: 4000px;
+    height: 300px;
+    color: #fff;
+    font-size: 50px;
+    background-image: url('./shining-circle-purple-lighting-isolated-dark-background_1441-2396.jpg');
+    background-position: center;
 }

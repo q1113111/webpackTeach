@@ -12,4 +12,4 @@ class Test {
   #a = 0
 }
 const newTest = new Test()
-console.log('newTestaa',newTest.a)
+console.log('newTestssaa',newTest.a)

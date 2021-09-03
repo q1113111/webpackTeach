@@ -12,6 +12,7 @@
 
 ---
 
+
 ### 教學 webpack.config
 * mode 兩種模式 development production
 * entry 要編譯的檔案
@@ -42,5 +43,10 @@
 ### babel引入
 * npm install --save-dev babel-loader @babel/core @babel/preset-env --save-dev
 * 獨立出一個babel.config.js 放入option
+ 
+### 加入圖檔
+* 搜尋assetsModule
 
-###
+### 清除dist資料夾
+* clean-webpack-plugin
+
