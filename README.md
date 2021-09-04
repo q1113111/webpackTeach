@@ -1,5 +1,5 @@
 ## 基礎教學設定 教學影片是4 用5的方式呈現
-
+https://www.youtube.com/watch?v=uP6KTupfyIw&t=2205s 教學來源
 ## packge.json
 
 ### 使用方式
