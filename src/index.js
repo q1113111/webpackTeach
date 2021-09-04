@@ -1,15 +1,25 @@
-import "./index.css";
+// import "./index.css";
+import './main.scss'
+// core version + navigation, pagination modules:
+//   // import Swiper bundle with all modules installed
+//   import Swiper from 'swiper/bundle';
 
-const btn = document.querySelector(".btn");
-const box = document.querySelector(".box");
+//   // import styles bundle
+//   import 'swiper/css/bundle';
 
-btn.addEventListener("click", () => {
-  const a = parseInt(box.textContent, 10);
-  box.textContent = a + 1;
-});
+// // configure Swiper to use modules
+// Swiper.use([Navigation, Pagination])
+
+const btn = document.querySelector('.btn')
+const box = document.querySelector('.box')
+
+btn.addEventListener('click', () => {
+  const a = parseInt(box.textContent, 10)
+  box.textContent = a + 1
+})
 
 class Test {
   #a = 0
 }
 const newTest = new Test()
-console.log('newTestssaa',newTest.a)
+console.log('ssss', newTest.a)

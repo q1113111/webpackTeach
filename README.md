@@ -31,6 +31,11 @@
 * 需要安裝 npm install --save-dev css-loader style-loader mini-css-extract-plugin 這樣webpack才能看得懂
 * 使用module 轉譯 webpack看得懂的語言
 * mini-css-extract-plugin 使css獨立出來
+* 壓縮 CSS npm install css-minimizer-webpack-plugin --save-dev
+* 要同步更新 dev 須加入  target:'web',
+
+### scss載入
+* npm install sass-loader sass --save-dev
 
 ### 產生html,css,檔
 
@@ -47,6 +52,6 @@
 ### 加入圖檔
 * 搜尋assetsModule
 
-### 清除dist資料夾
-* clean-webpack-plugin
+### 壓縮 js，根據設定也可去除 console 等等
+* npm install terser-webpack-plugin --save-dev
 
